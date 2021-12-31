@@ -19,15 +19,50 @@
 
         <form action="" id="new-animal-form">
 
-            <label for="name">Name</label>
-            <input type="text" placeholder="Enter animal's name" id="name" required>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Enter animal's name" id="name" required>
+            </div>
+            <br>
+            <div>
+                <label for="species">Species:</label>
+                <input type="text" placeholder="What species is it" id="species" required>
+            </div>
+            <br>
 
-            <label for="species">Species</label>
-            <input type="text" placeholder="What species is it" id="species" required>
+            <div>
+                <label for="continent">Continent:</label>
 
-            <label for="continent">Continent</label>
-            <input type="text" placeholder="Which continent it's from" id="continent" required>
-
+                <div>
+                    <input type="radio" id="continent" value="Asia">
+                    <label for="asia">Asia</label>
+                </div>
+                <div>
+                    <input type="radio" id="continent" value="Africa">
+                    <label for="africa">Africa</label>
+                </div>
+                <div>
+                    <input type="radio" id="continent" value="Europe">
+                    <label for="europe">Europe</label>
+                </div>
+                <div>
+                    <input type="radio" id="continent" value="North America">
+                    <label for="north-america">North America</label>
+                </div>
+                <div>
+                    <input type="radio" id="continent" value="South America">
+                    <label for="south-america">South America</label>
+                </div>
+                <div>
+                    <input type="radio" id="continent" value="Australia/Oceania">
+                    <label for="australia-oceania">Australia/Oceania</label>
+                </div>
+                <div>
+                    <input type="radio" id="continent" value="Antarctica">
+                    <label for="antarctica">Antarctica</label>
+                <div>
+            </div>
+              
             <br><br>
             <div>
                 <input type="submit" value="save">
