@@ -4,14 +4,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // For submit/save form
     const formInput = document.querySelector('#new-animal-form');
     formInput.addEventListener('submit', handleFormSubmit);
+
+    const deleteAllButton = document.querySelector('#delete');
+    deleteAllButton.addEventListener('click', handleDeleteList);
 });
+
 
 const handleFormSubmit = function(event) {
     event.preventDefault();
     const animalListItem = createAnimalListItem(event.target);
     const animalList = document.querySelector('#animal-list');
     animalList.appendChild(animalListItem);
-    // event.target.reset();
+    event.target.reset();
 }
 
 // Create list of animals
@@ -32,4 +36,10 @@ const createAnimalListItem = function(form) {
     animalListItem.appendChild(continent);
 
     return animalListItem;
+}
+
+// Delete all the list
+const handleDeleteList = function(event) {
+    const deleteList = document.querySelector('#animal-list');
+    deleteList.innerHTML = '';
 }
