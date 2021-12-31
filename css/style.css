@@ -1,6 +1,16 @@
 body {
     font-family: Palatino;
     font-weight: bold;
-    margin: 70px;
+    margin: 40px 70px;
     background-color: rgb(224, 224, 224);
+  }
+
+  #animal-list > li {
+    display: inline-block;
+    width: 28%;
+    background-color: rgb(255, 255, 255);
+    padding: 18px;
+    margin: 10px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px rgb(32, 32, 32);
   }
