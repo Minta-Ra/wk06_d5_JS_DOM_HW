@@ -6,6 +6,12 @@ JavaScript application that allows users to input items and see them displayed i
 Full homework brief</a>
 #
 
+## Loaded
 ![](screenshots/1.png)
+
+## After 'delete all' button has been clicked
 ![](screenshots/2.png)
+
+## Adding new animals to the list
 ![](screenshots/3.png)
+![](screenshots/4.png)
